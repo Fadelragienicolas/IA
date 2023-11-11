@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            *{
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+/* ********************************HEADER******************************************* */        
+    header{
+        height: 208px;
+        font-family: monospace;
+        display: block;
+        background-color: white;
+    }
+    div.logo-image{
+        height: 33vh;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 50;
+        padding-top: 32px;
+    }
+    .raven{
+        margin-left: 45%;
+        margin-top: -2.5%;
+    }
+    nav{
+        height: 100px;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        margin-top: 10.8%;
+        z-index: 50;
+    }
+    label.logo{
+        font-size: 40px;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        margin: 0 100px;
+        z-index: 50;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    nav ul li a{
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 17px;
+        font-weight: bold;
+    }
+    a.active,a:hover{
+        background-color: rgb(42, 75, 240);
+        transition: .8s;
+    }
+    label.menu{
+        float: right;
+        padding: 30px;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+/* *********************************MAIN*************************************************    */
+   body{
+    background-color: rgb(248, 243, 234);
+   }
+   .conteneur{
+       background-color: rgb(248, 243, 234);
+       margin-top: 10%;
+       text-align: center;
+       font-family: monospace;
+       font-size: 2rem;
+   }
+    
+   .section{
+       width: 100%;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .partie{
+       background-color: rgb(11, 11, 11);
+       margin: 20px;
+       background-color: rgb(248, 243, 234);
+   }
+/* *********************************MEDIA*************************************************    */
+
+        @media screen and (max-width: 1180px) {
+
+        nav{
+            margin-top: 15%;
+        }
+        }
+
+        @media screen and (max-width: 1100px) {
+        nav{
+            margin-top: 20%;
+        }
+
+        }
+        @media screen and (max-width: 1042px) {
+            
+        }
+
+            
+        @media screen and (max-width: 886px) {
+            label.menu{
+                display: flex;
+            }
+            nav ul li{
+                display: block;
+                text-align: center;
+                padding-top: 5px;
+            }
+            a.active,a:hover{
+            background-color: rgb(29, 29, 29);
+            transition: .8s;
+            color: blue;
+            opacity: 0.9;
+        }
+        label.logo{
+            margin: 0 30px;
+        }
+        nav{
+            margin-top: 20.2%;
+        }
+            nav ul{
+                height: 100vh;
+                background-color: rgb(29, 29, 29);
+                width: 100%;
+                top: 100px;
+                position: absolute;
+                left: -100%;
+                transition: all .8s;
+            }
+
+            #check:checked ~ ul{
+            left: 0%;
+            transition: all .8s;
+            }  
+
+            h1{
+                    font-size: 2rem;
+                } 
+            
+        }
+       
+
+
+        @media screen and (max-width: 679px) {
+                nav{
+                    margin-top: 23.7%;
+                }
+                iframe{
+                    width: 405px;
+                }
+        }
+
+        @media screen and (max-width: 550px) {
+                nav{
+                    margin-top: 30.7%;
+                }
+                iframe{
+                    width: 300px;
+                }
+        }
+
+        @media screen and (max-width: 420px) {
+                nav{
+                    margin-top: 35.7%;
+                }
+                label.logo{
+                    font-size: 35px;
+                }
+                h1{
+                    font-size: 1.7rem;
+                }
+        }
+
+        @media screen and (max-width: 350px) {
+            iframe{
+                    width: 230px;
+                    height: 215px;
+                }
+        }
+
+        @media screen and (max-width: 342px) {
+                nav{
+                    margin-top: 45.7%;
+                }
+                label.logo{
+                    font-size: 25px;
+                }
+            
+        }
+
+        @media screen and (max-width: 273px) {
+                nav{
+                    margin-top: 65.7%;
+                }
+                label.logo{
+                    font-size: 20px;
+                }     
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img class="raven" src="images/logo/logo10_26_184523.png" alt="" width="125px">
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label class="menu" for="check"><img src="images/icon/menu (1).png" alt="" width="40px"></label>
+            <label for="" class="logo">RavenIA</label>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Nos cours</a></li>
+                <li><a href="#" class="active">Video tuto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="conteneur">
+            <h1>Tuto HTML</h1>
+             <div class="section">
+                 <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qsbkZ7gIKnc?si=avCCUWZk7zlQ_3de" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+
+                 <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OJoSanZ2ypM?si=wDJZSAWsAWsQkRHO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+
+                 <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=W8WrnAySUPe7Kusl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+             </div>
+
+             <h1>Tuto CSS</h1>
+
+             <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iSWjmVcfQGg?si=3v2E0qnMiAv7Wwys&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wRNinF7YQqQ?si=Fn052X-Foe-4xuV3&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ywBg3YV2PJU?si=vJt0K8NIIUSant8l&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+             <h1>Tuto SQL</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAu-ENOxwTI?si=YFjQIFSKw9eRn7zI&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MvcDM2nLdzI?si=VAs-lQpt2fvuBIqV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Pzj7Aj25lw?si=epLivlUKG1NbNLck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+              <h1>Tuto JS</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2AedjW1rkBw?si=_0Vi-VnnoAYde13V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9OJLxDxyNg4?si=aYAgfSvfseTVT6Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gQDzV84KKw?si=4jzEPVySminnegBf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <h1>Tuto Php</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t0syDUSbdfE?si=-E9eTQWWn-KImtKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gphBeDNGOuA?si=CWBr-5uYObAAxnTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6EukZDFE_Zg?si=7zx7BuJjAxmggWtz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+                
+            <h1>Tuto Algorithme</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kk6YbA5I-Iw?si=0CQkEEwcqP1ymanY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EpQZBT1zJnA?si=dGd7iox4TTiQMgIB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/0GHaI2Qf5fU?si=VwbZMIKqutkjRazJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>
+            </div>
+
+            <h1>Tuto Merise</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2FMl28hPMwM?si=HPh2hyM66JwEkFbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rF4McITf7vg?si=DL9-h2i_w18Z7jKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AL3scu0z9M0?si=5kCR5HKwudIHZMQS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+              
+            <h1>Tuto VB</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FEI8Fq32_p4?si=Q4pZJbTw75Ylfo4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aRSJuKQ-34k?si=ra301n1f-bttFJ1u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DqStPRHYbv8?si=Na5WZDAJM73fJCe-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+             
+            <h1>Tuto Python</h1>
+
+            <div class="section">
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oUJolR5bX6g?si=0eleqpeLkckiunXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y62recdmhnA?si=UViMQ7nH7oF2HY9t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="partie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kqtD5dpn9C8?si=5aa5hIGu0qiZgeOP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

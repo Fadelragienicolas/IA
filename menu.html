@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+/* ********************************HEADER******************************************* */        
+    header{
+        height: 208px;
+        font-family: monospace;
+        display: block;
+        background-color: white;
+    }
+    div.logo-image{
+        height: 33vh;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 50;
+        padding-top: 32px;
+    }
+    .raven{
+        margin-left: 45%;
+        margin-top: -2.5%;
+    }
+    nav{
+        height: 100px;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        margin-top: 10.8%;
+        z-index: 50;
+    }
+    label.logo{
+        font-size: 40px;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+        margin: 0 100px;
+        z-index: 50;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    nav ul li a{
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 17px;
+        font-weight: bold;
+    }
+    a.active,a:hover{
+        background-color: rgb(42, 75, 240);
+        transition: .8s;
+    }
+    label.menu{
+        float: right;
+        padding: 30px;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+/* *********************************MAIN*************************************************    */
+    .conteneur{
+        background-color:  rgb(248, 243, 234);
+    }
+    body{
+        background-color: rgb(248, 243, 234);
+    }
+    .article{
+        width: 33%;
+        background-color: white;
+        margin: 5% 5px 5px 5px;
+        display: block;
+    }
+    .article1{
+        width: 33%;
+        background-color: white;
+        margin: 5px;
+        display: block;
+    }
+    .partie{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .partie1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+    .logo-cours{
+        width: 97%;
+        margin: 5px;
+        padding: 10px 10px 10px 155px;
+        display: flex;
+    }
+    .telecharger{
+        font-size: 2rem;
+        margin-left: 10%;
+    }
+    a.lien-tele:hover{
+        background-color: rgb(28, 234, 97);
+    }
+    a.lien-tele{
+        margin-left: 30px;
+    }
+    h1{
+        margin-top: 8%;
+        text-align: center;
+        font-size: 3rem;
+    }
+ /* *********************************MEDIA*************************************************    */
+        @media screen and (max-width: 1180px) {
+
+        nav{
+            margin-top: 15%;
+        }
+        }
+
+        @media screen and (max-width: 1100px) {
+        nav{
+            margin-top: 20%;
+        }
+
+        }
+        @media screen and (max-width: 1042px) {
+             .logo-cours{
+                padding: 10px 10px 10px 100px;
+             }
+             .telecharger{
+                font-size: 1.7rem;
+                margin-left: 2%;
+             }
+        }
+        
+            
+    @media screen and (max-width: 886px) {
+            label.menu{
+                display: flex;
+            }
+            nav ul li{
+                display: block;
+                text-align: center;
+                padding-top: 5px;
+            }
+            a.active,a:hover{
+            background-color: rgb(29, 29, 29);
+            transition: .8s;
+            color: blue;
+            opacity: 0.9;
+        }
+        label.logo{
+            margin: 0 30px;
+        }
+        nav{
+            margin-top: 20.2%;
+        }
+            nav ul{
+                height: 100vh;
+                background-color: rgb(29, 29, 29);
+                width: 100%;
+                top: 100px;
+                position: absolute;
+                left: -100%;
+                transition: all .8s;
+            }
+            #check:checked ~ ul{
+               left: 0%;
+               transition: all .8s;
+            }    
+            
+            .logo-cours{
+                padding: 10px 10px 10px 80px;
+             }
+             .telecharger{
+                font-size: 1.4rem;
+             }
+        }
+
+        @media screen and (max-width: 759px) {
+            .logo-cours{
+                padding: 10px 10px 10px 50px;
+             }
+             .telecharger{
+                font-size: 1rem;
+             }
+        }
+
+        @media screen and (max-width: 679px) {
+                nav{
+                    margin-top: 30.7%;
+                }
+                .telecharger{
+                   font-size: 0.8rem;
+             }
+             .logo-cours{
+                padding: 10px 10px 10px 30px;
+             }
+        }
+        @media screen and (max-width: 550px) {
+                nav{
+                    margin-top: 37.7%;
+                }
+                h1{
+                    font-size: 1.5rem;
+                    margin-top: 10%;
+                }
+        }
+        @media screen and (max-width: 420px) {
+                nav{
+                    margin-top: 55.7%;
+                }
+                label.logo{
+                    font-size: 35px;
+                }
+                .logo-cours{
+                padding: 10px 10px 10px 0px;
+               }
+               .telecharger{
+                   font-size: 0.6rem;
+               }
+               body{
+                  overflow-x: hidden;
+               }
+        }
+        @media screen and (max-width: 342px) {
+                nav{
+                    margin-top: 45.7%;
+                }
+                label.logo{
+                    font-size: 25px;
+                }
+               .telecharger{
+                   font-size: 0.5rem;
+               }
+               .partie{
+                    display: block;
+                    margin-left: 30%;
+                }
+                .partie1{
+                    display: block;
+                    margin-left: 30%;
+                }
+            
+        }
+        @media screen and (max-width: 273px) {
+                nav{
+                    margin-top: 65.7%;
+                }
+                label.logo{
+                    font-size: 20px;
+                }
+                .telecharger{
+                   font-size: 0.4rem;
+               }
+        }
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img class="raven" src="images/logo/logo10_26_184523.png" alt="" width="125px">
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label class="menu" for="check"><img src="images/icon/menu (1).png" alt="" width="40px"></label>
+            <label for="" class="logo">RavenIA</label>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#" class="active">Nos cours</a></li>
+                <li><a href="video-tuto.html">Video tuto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="conteneur">
+              <h1>Profitez de nos cours</h1>
+            <div class="partie">
+                    <div class="article">
+                       <div class="logo-cours">
+                          <img src="images/icon/html-5 (3).png" alt="" width="90px">
+                       </div>
+                       <div class="telecharger">
+                        <p><a class="lien-tele" href="documents/Cours html">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours html.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                       </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="logo-cours">
+                            <img src="images/icon/css-3.png" alt="" width="90px">
+                        </div>
+                        <div class="telecharger">
+                            <p><a class="lien-tele" href="documents/Cours CSS">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours CSS.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="logo-cours">
+                            <img src="images/icon/sql-server.png" alt="" width="90px">
+                        </div>
+                        <div class="telecharger">
+                            <p><a class="lien-tele" href="documents/Cours Basse donnee  Sql">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours Basse donnee  Sql.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="partie1">
+                    <div class="article1">
+                        <div class="logo-cours">
+                            <img src="images/icon/js.png" alt="" width="90px">
+                        </div>
+                        <div class="telecharger">
+                            <p><a class="lien-tele" href="documents/Cours JS">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours JS.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                        </div>
+                    </div>
+
+                    <div class="article1">
+                        <div class="logo-cours">
+                            <img src="images/icon/php.png" alt="" width="90px">
+                        </div>
+                        <div class="telecharger">
+                            <p><a class="lien-tele" href="documents/Cours php">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours php.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                        </div>
+                    </div>
+
+                    <div class="article1">
+                        <div class="logo-cours">
+                            <img src="images/icon/algorithms.png" alt="" width="90px">
+                        </div>
+                        <div class="telecharger">
+                            <p><a class="lien-tele" href="documents/Cours algorithme">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours algorithme.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                        </div>
+                    </div>
+             </div>
+            
+             <div class="partie1">
+                <div class="article1">
+                    <div class="logo-cours">
+                        <img src="images/icon/unnamed (1).png" alt="" width="90px">
+                    </div>
+                    <div class="telecharger">
+                        <p><a class="lien-tele" href="documents/Cours merise">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours merise.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                    </div>
+                </div>
+
+                <div class="article1">
+                    <div class="logo-cours">
+                        <img src="images/icon/vb-file.png" alt="" width="90px">
+                    </div>
+                    <div class="telecharger">
+                        <p><a class="lien-tele" href="documents/Cours VB">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours VB.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                    </div>
+                </div>
+
+                <div class="article1">
+                    <div class="logo-cours">
+                        <img src="images/icon/python.png" alt="" width="90px">
+                    </div>
+                    <div class="telecharger">
+                        <p><a class="lien-tele" href="documents/Cours python">Visiter le cours</a> <a class="lien-tele" href="documents/doc zip/Cours python.zip"><img src="images/icon/download (1).png" alt="" width="30px"></a></p>
+                    </div>
+                </div>
+         </div>
+        
+        </div>
+    </main>
+</body>
+</html>

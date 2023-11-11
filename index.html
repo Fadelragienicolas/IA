@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+/* ********************************HEADER******************************************* */        
+        header{
+            height: 208px;
+            font-family: monospace;
+            display: block;
+            background-color: white;
+        }
+        div.logo-image{
+            height: 33vh;
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            z-index: 50;
+            padding-top: 32px;
+        }
+        .raven{
+            margin-left: 45%;
+            margin-top: -2.5%;
+        }
+        nav{
+            height: 100px;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            margin-top: 10.8%;
+            z-index: 50;
+        }
+        label.logo{
+            font-size: 40px;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            margin: 0 100px;
+            z-index: 50;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 20px;
+            font-size: 17px;
+        }
+        nav ul li a{
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 17px;
+            font-weight: bold;
+        }
+        a.active,a:hover{
+            background-color: rgb(42, 75, 240);
+            transition: .8s;
+        }
+        label.menu{
+            float: right;
+            padding: 30px;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+/* ********************************MAIN******************************************* */
+        .conteneur{
+            height: 69vh;
+            border: solid white;
+            background: url(images/student-865073_1280.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        .welcome{
+            font-size: 2.3rem;
+            margin-top: 5%;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            animation: 1s ease-in-out  welcome;
+            overflow-x: hidden;
+        }
+        .slogan{
+            font-size: small;
+            color: rgb(216, 213, 213);
+        }
+        @keyframes welcome {
+            0%{
+                opacity: 0;
+                transform: translateY(180px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .A-propos{
+            margin-top: -5%;
+            background-color: rgb(248, 243, 234);
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .images{
+            margin-top: 2px;
+            width: 50%;
+            display: inline-block;
+            margin-left: 4Px;
+        }
+        .text{
+            float: right;
+            width: 49%;
+            vertical-align: top;
+            font-size: 19px;
+            z-index: 10;
+        }
+        .aprop{
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-family: monospace;
+            text-align: center;
+            margin-top: 4px;
+            opacity: 0.7;
+        }
+
+
+        .conteneur-img-cours{
+            width: 100%;
+            background-color: rgb(248, 243, 234);
+            display: flex;
+            justify-content: center;
+        }
+        .img-cours{
+            width: 32%;
+            margin: 10px;
+        }
+        .m-conf{
+            background-color: rgb(248, 243, 234);
+            margin-top: 2%;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: monospace;
+            opacity: 0.7;
+            text-transform: uppercase;
+        }
+       
+/* ********************************FOOTER******************************************* */
+        
+       footer{
+            background-color: rgb(23, 23, 23);
+            font-style: italic;
+            display: block;
+        }
+        .email{
+           text-align: center;
+           color: white;
+           opacity: 0.6;
+           font-size: 2.5rem;
+           margin-top: 20px;
+        }
+        .trai{
+            height: 0.1px;
+            width: 60%;
+            background-color: white;
+            margin-left: 20%;
+        }
+        .trai1{
+            height: 0.1px;
+            width: 30%;
+            background-color: white;
+            margin-left: 35%;
+        }
+        .r-sociaux{
+            display: flex;
+            margin-left: 48%;
+            margin-top: 2%;
+        }
+        marquee{
+            margin-top: 10px;
+            opacity: 0.6;
+            color: white;
+        }
+        h3{
+            opacity: 0.6;
+            color: white;
+            text-align: center;
+        }
+/* ********************************MEDIA******************************************* */
+        @media screen and (max-width: 1180px) {
+            .aprop{
+                font-size: 1.5em;
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+            .m-conf{
+                font-size: 1.5em;
+            }
+            .text{
+                font-size: 16px;
+            }
+            nav{
+                margin-top: 15%;
+            }
+         }
+         @media screen and (max-width: 1100px) {
+            .conteneur{
+                margin-top: 5%;
+                height: 40vh;
+            }
+            .welcome{
+                font-size: 1.5rem;
+            }
+            nav{
+                margin-top: 20%;
+            }
+            
+         }
+ 
+        @media screen and (max-width: 886px) {
+            label.menu{
+                display: flex;
+            }
+            nav ul li{
+                display: block;
+                text-align: center;
+                padding-top: 5px;
+            }
+            a.active,a:hover{
+            background-color: rgb(29, 29, 29);
+            transition: .8s;
+            color: blue;
+            opacity: 0.9;
+        }
+        label.logo{
+            margin: 0 30px;
+        }
+        nav{
+            margin-top: 20.2%;
+        }
+            nav ul{
+                height: 100vh;
+                background-color: rgb(29, 29, 29);
+                width: 100%;
+                top: 100px;
+                position: absolute;
+                left: -100%;
+                transition: all .8s;
+            }
+            #check:checked ~ ul{
+               left: 0%;
+               transition: all .8s;
+            }
+            .A-propos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text{
+                font-size: medium;
+            }
+        }
+        @media screen and (max-width: 679px) {
+                nav{
+                    margin-top: 23.7%;
+                }
+                .welcome{
+                    font-size: 1rem;
+                    margin-top: 10%;
+                }
+        }
+        @media screen and (max-width: 550px) {
+                nav{
+                    margin-top: 30.7%;
+                }
+                .email{
+                    font-size: 1.5rem;
+                }
+        }
+        @media screen and (max-width: 420px) {
+                nav{
+                    margin-top: 35.7%;
+                }
+                .welcome{
+                    font-size: 0.8rem;
+                    margin-top: 20%;
+                }
+                label.logo{
+                    font-size: 35px;
+                }
+        }
+        @media screen and (max-width: 342px) {
+                nav{
+                    margin-top: 45.7%;
+                }
+                .welcome{
+                    font-size: 0.5rem;
+                    margin-top: 28%;
+                }
+                label.logo{
+                    font-size: 25px;
+                }
+                .email{
+                    font-size: 1rem;
+                }
+        }
+        @media screen and (max-width: 273px) {
+                nav{
+                    margin-top: 65.7%;
+                }
+                .welcome{
+                    font-size: 0.5rem;
+                    margin-top: 40%;
+                }
+                label.logo{
+                    font-size: 20px;
+                }
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img class="raven" src="images/logo/logo10_26_184523.png" alt="" width="125px">
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label class="menu" for="check"><img src="images/icon/menu (1).png" alt="" width="40px"></label>
+            <label for="" class="logo">RavenIA</label>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="menu.html">Nos cours</a></li>
+                <li><a href="video-tuto.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="conteneur">
+             <div class="welcome">
+                <h1 class="m-welcome">Bienvenue <br> sur Raven Informatique !</h1>
+                <h6 class="slogan">Apprends, grandis et réalise tes rêves avec nous !</h6>
+             </div>
+        </div>
+        <div class="A-propos">
+             <div class="images">
+                <img src="images/jeune-homme-souriant-travaillant-ordinateur-portable-dans-bureau_1268-21467.jpg" alt="" width="100%">
+             </div>
+             <div class="text">
+                   <p>
+                    <h1 class="aprop"> A propos de nous </h1>
+
+                    "Raven Informatique : Votre Porte d'Accès au Monde de l'Informatique
+                    
+                    Que vous souhaitiez devenir un développeur web chevronné, maîtriser les bases de données ou comprendre les subtilités de la méthode Merise..., Raven Informatique est votre destination d'apprentissage incontournable.
+                    
+                    Notre plateforme propose une gamme diversifiée de cours et de ressources pour vous aider à acquérir les compétences essentielles en informatique. Nos instructeurs expérimentés guideront votre parcours d'apprentissage, de la programmation web aux concepts avancés des bases de données.                    
+                   </p>
+             </div>
+        </div>
+        <div class="m-conf">Faites nous confiance</div>
+        <div class="conteneur-img-cours">
+              <div class="img-cours">
+                  <img class="img" src="images/collage-arriere-plan-programmation_23-2149901789.jpg" alt="" width="100%">
+              </div>
+
+              <div class="img-cours">
+                  <img class="img" src="images/concept-stockage-numerique-du-systeme-informatique-base-donnees_53876-123742.jpg" alt="" width="100%">
+              </div>
+
+              <div class="img-cours">
+                  <img class="img" src="images/logo-php-clavier-ordinateur-ecriture-code-programmation-php-creation-projets-web-langage-hypertext-preprocessor-developpement-sites-web-doigt-appuie-bouton_431724-6318.jpg" alt="" width="100%">
+              </div>
+        </div>
+    </main>
+    <footer>
+          <h1 class="email">E-mail: Fadelragienicolas@gmail.com</h2></h1>
+          <div class="trai"></div>
+          <h1 class="email">Tel: 01-43-20-85-29</h2></h1>
+          <div class="trai1"></div>
+          <div class="r-sociaux">
+              <a href="https://www.youtube.com/@RavenProLyrics" target="_blank"><img src="images/icon/youtube.png" width="20px" alt=""></a>
+              <a href="https://wa.me/+2250143208529" target="_blank"><img src="images/icon/whatsapp.png" width="20px" alt=""></a>
+              <a href="https://www.facebook.com/mignon.garcon.7121" target="_blank"><img src="images/icon/—Pngtree—facebook social media icon_8704814.png" width="20px" alt=""></a>
+              
+          </div>
+          <h3>Raven informatique &copy; 2023-2024</h3>
+          <marquee behavior="" direction="">Merci de nous faire confiance !</marquee>
+    </footer>
+</body>
+</html>
